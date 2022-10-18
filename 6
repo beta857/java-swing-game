@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <style>
+        .one{
+            width:50px;
+	        height:50px;
+	        background:rgb(0,136,204);
+            transition:width 1s;
+        }
+        .two{
+            width:50px;
+	        height:50px;
+	        background:rgb(231,76,60);
+            transition:width 1s;
+        }
+        div:hover {
+	        width:150px;
+           height: 50px;
+        }
+        div:hover span{
+	        width:150px;
+           height: 50px;
+           display: block;
+           position: relative;
+           top: 15px;
+           left: 10px;
+        }
+        div:hover i{
+            position: relative;
+            left: 110px;
+            top: -48px;
+        }
+        span{
+           color: white;
+        }
+        .word{
+            display: none;
+        }
+        i{
+            color: white;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+    </style>
+    <body>
+        <div class="one">
+            <span class="word">访客 Vistor</span>
+            <i class="glyphicon glyphicon-globe" aria-hidden="true" ></i>
+        </div>
+        <div class="two">
+            <span class="word">学生 Student</span>
+            <i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+        </div>
+    </body>
+</html>
