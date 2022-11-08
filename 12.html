@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <script>
+        function register(){
+            var account=document.getElementById("account").value;
+            var password=document.getElementById("password").value;
+            var passwords=document.getElementById("passwords").value;
+            if(account==""){
+                alert("用户名不能为空")
+            }
+            if(password==""){
+                alert("密码不能为空")
+            }
+            if(password.length<6){
+                alert("密码最少需要6位！")
+                return false;
+            }
+            if(password!=passwords){
+                alert("密码必须一致！")
+            }
+        }
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <form>
+    <h1>注册页面</h1>
+    用户名：<input type="text" id="account"><br/>
+    密码：<input type="text" id="password"><br/>
+    再次确认密码：<input type="text" id="passwords"><br/>
+    <input type="submit" value="提交" onclick="register()">
+    </form>
+</body>
+</html>
